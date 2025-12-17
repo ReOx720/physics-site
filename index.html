@@ -4,18 +4,23 @@
   <meta charset="UTF-8">
   <title>High School Physics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Sidebar -->
   <div class="sidebar">
     <h2>Physics</h2>
-    <ul id="chapterList"></ul>
+    <ul id="chapterList">
+      <!-- Chapters will be inserted by JavaScript -->
+    </ul>
   </div>
 
+  <!-- Main Content -->
   <div class="content">
-    <button id="backBtn" class="hidden">← Back</button>
-
+   <button id="backBtn" class="hidden">← Back</button>
     <h1 id="lessonTitle">Select a lesson</h1>
     <p id="lessonText">Choose a chapter and lesson to start learning.</p>
 
@@ -39,6 +44,7 @@
     </div>
   </div>
 
+  <!-- Link JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
