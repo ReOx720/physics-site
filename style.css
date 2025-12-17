@@ -1,3 +1,4 @@
+/* Basic reset */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -5,18 +6,25 @@ body {
   color: #222;
 }
 
+/* Layout */
 .sidebar {
   width: 220px;
-  background: #fff;
+  background: #ffffff;
   border-right: 1px solid #ddd;
   padding: 15px;
   position: fixed;
   height: 100vh;
+  overflow-y: auto;
 }
 
 .content {
   margin-left: 240px;
   padding: 20px;
+}
+
+/* Sidebar list */
+.sidebar h2 {
+  margin-top: 0;
 }
 
 .sidebar ul {
@@ -30,26 +38,43 @@ body {
   color: #0066cc;
 }
 
+.sidebar li:hover {
+  text-decoration: underline;
+}
+
+/* Sections */
 section {
-  background: #fff;
-  padding: 15px;
   margin-top: 20px;
+  padding: 15px;
+  background: #ffffff;
   border-radius: 5px;
 }
 
-button {
-  padding: 6px 12px;
-  margin-top: 5px;
+/* Question box */
+.question {
+  margin-bottom: 15px;
 }
 
+.help-box {
+  margin-top: 5px;
+  padding: 8px;
+  background: #eee;
+  font-size: 0.9em;
+}
+
+/* Buttons */
+button {
+  margin-top: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Utility */
 .hidden {
   display: none;
 }
 
-#backBtn {
-  margin-bottom: 15px;
-}
-
+/* Mobile */
 @media (max-width: 700px) {
   .sidebar {
     position: static;
@@ -60,4 +85,10 @@ button {
   .content {
     margin-left: 0;
   }
-  }
+}
+#backBtn {
+  margin-bottom: 15px;
+  background: #ddd;
+  border: none;
+  padding: 8px 12px;
+}
